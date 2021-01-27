@@ -11,7 +11,6 @@ import com.teapot.repository.ProjectRepository;
 import com.teapot.service.ProjectService;
 import com.teapot.service.TaskService;
 import com.teapot.service.UserService;
-import org.springframework.context.annotation.Lazy;
 import org.springframework.data.domain.Sort;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Service;
@@ -116,20 +115,5 @@ public class ProjectServiceImpl implements ProjectService {
                 .stream()
                 .map(project -> projectMapper.convertToDto(project))
                 .collect(Collectors.toList());
-        }
+    }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

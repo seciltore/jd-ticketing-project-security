@@ -22,4 +22,5 @@ public class JdTicketingProjectSecurityApplication {
     public BCryptPasswordEncoder passwordEncoder(){
         return new BCryptPasswordEncoder();
     }
+
 }

@@ -4,6 +4,7 @@ package com.teapot.controller;
 import com.teapot.dto.ProjectDTO;
 import com.teapot.service.ProjectService;
 import com.teapot.service.UserService;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.stereotype.Controller;
@@ -100,22 +101,6 @@ public class ProjectController {
     }
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

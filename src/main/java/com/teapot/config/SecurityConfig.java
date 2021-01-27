@@ -38,19 +38,19 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 ).permitAll()
                 .and()
                 .formLogin()
-                    .loginPage("/login")
-                    .defaultSuccessUrl("/welcome")
-                    //.successHandler(authSuccessHandler)
-                    .failureUrl("/login?error=true")
-                    .permitAll()
+                .loginPage("/login")
+//                    .defaultSuccessUrl("/welcome")
+                .successHandler(authSuccessHandler)
+                .failureUrl("/login?error=true")
+                .permitAll()
                 .and()
                 .logout()
-                    .logoutRequestMatcher(new AntPathRequestMatcher("/logout"))
-                    .logoutSuccessUrl("/login")
+                .logoutRequestMatcher(new AntPathRequestMatcher("/logout"))
+                .logoutSuccessUrl("/login")
                 .and()
                 .rememberMe()
-                    .tokenValiditySeconds(120)
-                    .key("teapotSecret")
-                    .userDetailsService(securityService);
-        }
+                .tokenValiditySeconds(120)
+                .key("teapotSecret")
+                .userDetailsService(securityService);
+    }
 }

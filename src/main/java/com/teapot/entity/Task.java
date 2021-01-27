@@ -1,7 +1,5 @@
 package com.teapot.entity;
 
-import com.teapot.dto.ProjectDTO;
-import com.teapot.dto.UserDTO;
 import com.teapot.enums.Status;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
